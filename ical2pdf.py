@@ -22,11 +22,10 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 #
 
-from __future__ import print_function
 from icalendar import Calendar
 from urllib import urlopen
 from collections import namedtuple
-from os import tempnam, system, getpid, remove
+from os import system, getpid, remove
 
 # fetch data
 

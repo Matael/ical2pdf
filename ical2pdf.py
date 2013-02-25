@@ -75,7 +75,7 @@ for e in events:
         fh.write('\n'+str(e.dtstart.date())+'\n'+'='*l+'\n')
         previous_d = e.dtstart.date()
 
-    fh.write("- **[ "+e.location.capitalize().split(' ')[0]+" ] ")
+    fh.write("- **[ "+e.location.capitalize()+" ] ")
     fh.write(str(e.dtstart.hour+UTC_OFFSET)+':'+str(e.dtstart.minute)+"**-"+str(e.dtend.hour+UTC_OFFSET)+':'+str(e.dtend.minute)+" ")
     fh.write(e.summary.capitalize()+'\n')
 
